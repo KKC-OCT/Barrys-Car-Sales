@@ -1,0 +1,51 @@
+ENQUIRY.HTML FINDINGS
+
+Keyboard and form
+
+Tab and Shift+Tab work, and Space ticks the checkbox.
+The arrow keys switch between Email and Phone.
+Pressing Enter in a field, on the checkbox or on the submit button wipes the whole form instead of moving to the next field. It acts as if the enquiry was sent, even when the form is incomplete.
+There are no errors, no required fields highlighted, and no confirmation message after submitting. I expected required-field errors, then a “thanks, enquiry sent” message once it was filled in correctly.
+Clicking the text beside the checkbox or the radios does nothing.
+The message box is pre-filled with “Tell us what you would like to know...”, and it doesn’t clear when I start typing. I have to delete it myself.
+
+Form labels and structure
+
+“Full name” has no proper label. It’s only plain text, with a placeholder in the box.
+The checkbox text and the Email/Phone radio options aren’t labelled, which is why clicking them does nothing.
+“Preferred contact method” isn’t grouped with the radios, so they need a <fieldset> and <legend>.
+The Email field is a plain text box (should be type="email"), and so is Telephone (type="tel").
+The page says “Fields marked in red are important”, but nothing is red and no field is marked as required. It relies on colour alone.
+The “SUBMIT” button wording is vague. “Send enquiry” would be clearer.
+
+Layout
+
+The alignment is all over the place. The fixed-width fields (400px) are also applied to the checkbox and radios.
+
+Navigation
+
+The order on this page is Home, About, Enquiry. The label says “Enquiry” but it’s “Contact” on the other pages.
+Nothing shows which page I’m on, because the current page’s link doesn’t stay highlighted.
+
+Headings and structure
+
+One <h1>, then an <h2> (“Vehicle enquiry”), and the header, nav, main and footer are marked up properly.
+
+Extras
+
+The page language is set, and the title (“Vehicle Enquiry - Barry’s Car Sales”) is unique and descriptive.
+There’s no viewport meta tag, so the layout won’t scale on a phone.
+There’s no skip link, so keyboard users have to Tab through the nav on every page.
+
+Zoom
+
+At 200% there’s sideways scrolling, and the banner shrinks in width, but nothing is cut off or hard to reach.
+At 400% the banner gets cut off.
+
+Styles off
+
+It works fine.
+
+Contrast
+
+No contrast errors.

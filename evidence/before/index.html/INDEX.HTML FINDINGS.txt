@@ -1,0 +1,48 @@
+INDEX.HTML FINDINGS
+
+Keyboard
+
+Tab and Shift+Tab work, and the order is logical. The first Tab lands on Home, then the rest follow in reading order.
+All focused items have a visible outline.
+Home, About and Contact: Enter works.
+“View current stock”: Enter scrolls down to the car list.
+2019 Hatch 1.0 (“Click here”), 2018 Audi S4 (“More”) and 2021 City-e (“Enquire about the 2021 City-e”): Enter works and goes to the enquiry page.
+2020 Trail 1.5 (“Ask about this car”) isn’t clickable and never gets focus, because it isn’t a link.
+Nothing shows which page I’m on, because the current page’s link doesn’t stay highlighted.
+The nav order and wording change between pages (see the nav table on about.html).
+
+Headings and structure
+
+There’s one main heading (<h1>), and the header, nav, main and footer are marked up properly.
+“Cars currently available” is an <h4> straight after an <h2>, so it skips a level, and the car names after it are <h3>s.
+
+Links
+
+“Click here” and “More” don’t make sense out of context, and neither says which car it’s for.
+Links are underlined, so they don’t rely on colour.
+
+Images
+
+The Hatch image has no alt text.
+The Audi image’s alt text is just “car”, which is too vague.
+
+Extras
+
+The page has no lang set.
+The title is just “Barry’s Car Sales”, which isn’t descriptive or unique.
+There’s no viewport meta tag, so the layout won’t scale on a phone.
+The phone number in the header is plain text, not a tap-to-call link.
+There’s no skip link, so keyboard users have to Tab through the nav on every page.
+
+Zoom
+
+At 200% there’s sideways scrolling, and the banner shrinks in width, but nothing is cut off or hard to reach.
+At 400% the banner gets cut off.
+
+Styles off
+
+It works fine.
+
+Contrast
+
+No contrast errors.
