@@ -1,0 +1,35 @@
+ABOUT.HTML FINDINGS
+
+Keyboard
+
+Tab, Shift+Tab and Enter all work, and I didn’t get stuck anywhere.
+All the links go where they should.
+There’s no way to tell which page I’m on, because the current page’s link doesn’t stay highlighted.
+The nav order and wording change from page to page (see below).
+
+Navigation consistency
+
+Page	Nav order
+index.html	Home, About, Contact
+about.html	Contact, Home, About Us
+enquiry.html	Home, About, Enquiry
+The order is different on about.html.
+The labels are inconsistent: “About” becomes “About Us”, and “Contact” becomes “Enquiry”.
+
+Structure
+
+The team table has no header cells (<th>), scope or caption, so a screen reader can’t tell what each row and column means.
+
+Zoom
+
+At 200% there’s sideways scrolling, but nothing is cut off or hard to reach.
+The blue banner at the top doesn’t fit the frame once zoomed. It shrinks in width while the page keeps scrolling.
+At 400% the banner gets cut off.
+
+Styles off
+
+It works fine. The content still reads in a sensible order.
+
+Contrast
+
+No contrast errors.
