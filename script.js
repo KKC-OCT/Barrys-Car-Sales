@@ -1,7 +1,8 @@
-var link = document.getElementById("suv-enquiry");
+const params = new URLSearchParams(window.location.search);
+const selectedCar = params.get("car");
 
-if (link) {
-    link.onclick = function() {
-        window.location.href = "enquiry.html";
-    };
+const carDropdown = document.getElementById("car");
+
+if (carDropdown && selectedCar) {
+    carDropdown.value = selectedCar;
 }
