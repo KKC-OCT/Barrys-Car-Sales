@@ -530,3 +530,16 @@ main form textarea:focus {
 #confirmation:empty {
     display: none;
 }
+
+.privacy-note {
+    background: #f3f5f8;
+    padding: 12px;
+    border-left: 4px solid #d4a84f;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.privacy-note a {
+    color: #14365d;
+    font-weight: bold;
+}
