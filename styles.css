@@ -247,3 +247,77 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+.hero {
+    background: #14365d;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid #d4a84f;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.hero p {
+    color: #e0e8f0;
+    line-height: 1.7;
+}
+
+.hero a {
+    display: inline-block;
+    background: #d4a84f;
+    color: #102b49;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero a:hover {
+    background: #edc875;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 22px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+}
+
+footer {
+    background: #102b49;
+    color: white;
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 4px solid #d4a84f;
+}
+
+footer h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+footer p {
+    color: #c5d3e2;
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+footer .copyright {
+    border-top: 1px solid #38516b;
+    padding-top: 15px;
+    margin-top: 20px;
+    font-size: 12px;
+}
