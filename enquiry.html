@@ -18,7 +18,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="enquiry.html">Enquiry</a>
+        <a href="enquiry.html">Contact</a>
     </nav>
 </header>
 
@@ -40,9 +40,8 @@
         </div>
 
         <div>
-            <span>Full name</span>
-            <input type="text" name="name" placeholder="e.g. Dave Smith">
-        </div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith">
 
         <div>
             <label for="email">Email address</label>
@@ -56,21 +55,23 @@
 
         <div>
             <label for="message">Your message</label>
-            <textarea id="message" name="message">Tell us what you would like to know...</textarea>
+            <textarea id="message" name="message" placeholder="Tell us what you would like to know..."></textarea>
         </div>
 
         <div>
             <input type="checkbox" id="updates" name="updates">
-            <span>Send me occasional offers and updates</span>
+            <label for="updates">Send me occasional offers and updates</label>
         </div>
 
-        <div>
-            <label>Preferred contact method</label>
-            <div>
-                <input type="radio" name="contact" value="email"> Email
-                <input type="radio" name="contact" value="phone"> Phone
-            </div>
-        </div>
+        <fieldset>
+            <legend>Preferred contact method</legend>
+
+            <input type="radio" id="contact-email" name="contact" value="email">
+            <label for="contact-email">Email</label>
+
+            <input type="radio" id="contact-phone" name="contact" value="phone">
+            <label for="contact-phone">Phone</label>
+        </fieldset>
 
         <button type="submit">SUBMIT</button>
     </form>
