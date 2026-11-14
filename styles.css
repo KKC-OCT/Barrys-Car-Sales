@@ -1,5 +1,6 @@
+
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
     background: #eeeeee;
 }
@@ -8,120 +9,7 @@ body {
     box-sizing: border-box;
 }
 
-header {
-    background: #14365d;
-    color: white;
-    padding: 20px;
-    width: 100%;
-}
-
-h1 {
-    margin: 0;
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    color: white;
-    margin-right: 15px;
-}
-
-main {
-    width: 90%;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    background: white;
-}
-
-img {
-    width: 300px;
-    max-width: 100%;
-    height: auto;
-}
-
-table {
-    border-collapse: collapse;
-    max-width: 100%;
-}
-
-th,
-td {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-label {
-    display: block;
-}
-
-input,
-select,
-textarea {
-    width: 400px;
-    max-width: 100%;
-    margin-bottom: 10px;
-}
-
-textarea {
-    height: 100px;
-}
-
-button {
-    background: #14365d;
-    color: white;
-    padding: 5px;
-}
-
-footer {
-    width: 90%;
-    max-width: 900px;
-    margin: auto;
-    font-size: 12px;
-}
-
-input[type="checkbox"] {
-    width: auto;
-    margin-right: 5px;
-}
-
-input[type="checkbox"] + label {
-    display: inline;
-}
-
-fieldset {
-    width: fit-content;
-    max-width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-}
-
-fieldset input {
-    width: auto;
-}
-
-@media (max-width: 600px) {
-    main {
-        width: 95%;
-        padding: 15px;
-    }
-
-    input,
-    select,
-    textarea {
-        width: 100%;
-    }
-
-    nav a {
-        display: inline-block;
-        margin-bottom: 8px;
-    }
-}
-
-
-
+/* HEADER */
 header {
     background: #102b49;
     color: white;
@@ -157,6 +45,7 @@ header > div > div:last-child {
     font-weight: bold;
 }
 
+/* NAVIGATION */
 nav {
     margin-top: 22px;
     display: flex;
@@ -177,20 +66,114 @@ nav a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-    header {
-        padding: 20px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    header > div > div:last-child {
-        padding: 9px 12px;
-    }
+/* MAIN CONTENT */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
 }
 
+/* IMAGES */
+img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* TABLE */
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+/* FORMS */
+label {
+    display: block;
+}
+
+input,
+select,
+textarea {
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: #14365d;
+    color: white;
+    padding: 5px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="checkbox"] + label {
+    display: inline;
+}
+
+fieldset {
+    width: fit-content;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+fieldset input {
+    width: auto;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #14365d;
+    color: white;
+    padding: 35px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid #d4a84f;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.hero p {
+    color: #e0e8f0;
+    line-height: 1.7;
+}
+
+.hero a {
+    display: inline-block;
+    background: #d4a84f;
+    color: #102b49;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero a:hover {
+    background: #edc875;
+    text-decoration: underline;
+}
+
+/* CAR LISTINGS */
 .car-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -242,63 +225,13 @@ nav a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-    .car-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-.hero {
-    background: #14365d;
-    color: white;
-    padding: 35px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    border-left: 5px solid #d4a84f;
-}
-
-.hero h2 {
-    font-size: 28px;
-    margin-top: 0;
-}
-
-.hero p {
-    color: #e0e8f0;
-    line-height: 1.7;
-}
-
-.hero a {
-    display: inline-block;
-    background: #d4a84f;
-    color: #102b49;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.hero a:hover {
-    background: #edc875;
-    text-decoration: underline;
-}
-
-@media (max-width: 600px) {
-    .hero {
-        padding: 22px;
-    }
-
-    .hero h2 {
-        font-size: 23px;
-    }
-}
-
+/* FOOTER */
 footer {
     background: #102b49;
     color: white;
     width: 100%;
-    margin-top: 40px;
+    max-width: none;
+    margin: 40px 0 0;
     padding: 30px 20px;
     text-align: center;
     border-top: 4px solid #d4a84f;
@@ -320,4 +253,47 @@ footer .copyright {
     padding-top: 15px;
     margin-top: 20px;
     font-size: 12px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    header > div > div:last-child {
+        padding: 9px 12px;
+    }
+
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    .car-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 22px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
 }
