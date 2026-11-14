@@ -1,12 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vehicle Enquiry - Barry's Car Sales</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
+
 <header>
     <div>
         <div>
@@ -23,14 +26,17 @@
 </header>
 
 <main>
-    <h2>Vehicle enquiry</h2>
-    <p>Complete the form below and a member of our team will contact you.</p>
-    <p>Fields marked in red are important.</p>
+    <section>
+        <h2>Vehicle Enquiry</h2>
+        <p>Interested in one of our vehicles? Complete the form below and our team will be happy to help.</p>
+        <p><span class="required">*</span> Required fields</p>
+    </section>
 
     <form action="#" method="post">
+
         <div>
-            <label for="car">Vehicle</label>
-            <select id="car" name="car">
+            <label for="car">Vehicle<span class="required">*</span></label>
+            <select id="car" name="car" required>
                 <option value="">Choose a vehicle</option>
                 <option value="hatch">2019 Hatch 1.0</option>
                 <option value="trail">2020 Trail 1.5</option>
@@ -40,22 +46,23 @@
         </div>
 
         <div>
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith">
-
-        <div>
-            <label for="email">Email address</label>
-            <input type="text" id="email" name="email">
+            <label for="name">Full name<span class="required">*</span></label>
+            <input type="text" id="name" name="name" placeholder="e.g. Dave Smith" required>
         </div>
 
         <div>
-            <label for="phone">Telephone</label>
-            <input type="text" id="phone" name="phone">
+            <label for="email">Email address<span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="e.g. dave@example.com" required>
         </div>
 
         <div>
-            <label for="message">Your message</label>
-            <textarea id="message" name="message" placeholder="Tell us what you would like to know..."></textarea>
+            <label for="phone">Telephone<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. 07700 900000" required>
+        </div>
+
+        <div>
+            <label for="message">Your message<span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Tell us what you would like to know..." required></textarea>
         </div>
 
         <div>
@@ -64,23 +71,30 @@
         </div>
 
         <fieldset>
-            <legend>Preferred contact method</legend>
+            <legend>Preferred contact method<span class="required">*</span></legend>
 
-            <input type="radio" id="contact-email" name="contact" value="email">
+            <input type="radio" id="contact-email" name="contact" value="email" required>
             <label for="contact-email">Email</label>
 
             <input type="radio" id="contact-phone" name="contact" value="phone">
             <label for="contact-phone">Phone</label>
         </fieldset>
 
-        <button type="submit">SUBMIT</button>
+        <button type="submit">Submit Enquiry</button>
     </form>
+
+    <p id="confirmation" role="status" aria-live="polite"></p>
 
     <p>We aim to respond within two working days.</p>
 </main>
 
 <footer>
-    Barry's Car Sales · 15 Chipmunk Close, Hatfield, Hertfordshire · 01707 111 222
+    <h3>Barry's Car Sales</h3>
+    <p>Quality used cars at sensible prices.</p>
+    <p>15 Chipmunk Close, Hatfield, Hertfordshire</p>
+    <p>Phone: 01707 111 222</p>
+    <p class="copyright">© 2026 Barry's Car Sales. All rights reserved.</p>
 </footer>
+
 </body>
 </html>
