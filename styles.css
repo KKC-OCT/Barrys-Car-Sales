@@ -543,3 +543,9 @@ main form textarea:focus {
     color: #14365d;
     font-weight: bold;
 }
+
+nav a.active {
+    color: #d4a84f;
+    font-weight: bold;
+    border-bottom: 2px solid #d4a84f;
+}
