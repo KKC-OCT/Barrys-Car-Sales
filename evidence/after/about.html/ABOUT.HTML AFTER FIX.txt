@@ -1,0 +1,30 @@
+ABOUT.HTML AFTER FIX
+
+Keyboard and navigation
+
+The nav now shows which page I’m on. “About” is bold with a line under it, and aria-current="page" is set. WAVE picks it up (1 ARIA).
+The nav is now Home, About, Enquire, in the same order as index.html, and “About Us” is now “About”. I haven’t seen enquiry.html, so I can’t confirm that page matches yet.
+
+Headings and structure
+
+The headings now go in a sensible order: h1, h2 (“About Barry’s Car Sales”), h2 (“Who We Are”), then h3s for “What We Do”, “Meet Our Team”, “Why Choose Us?” and “Opening Times”. The h4 that skipped a level is gone.
+The fake bold headings (“What we do”, “Opening times”) are now real headings.
+The “Why choose us” points are now a proper list (<ul>), not separate paragraphs.
+The team table now has header cells (Name, Role, Responsibilities / Experience) in a <thead>. I didn’t add a caption or scope.
+The header, nav, main, aside and footer are all marked up, with 1 of each in WAVE.
+
+Links
+
+“Click here” is now “Contact us about a vehicle”.
+WAVE still shows 1 alert, “Redundant link”. It’s probably because the enquiry page is linked from both the nav and this paragraph, but check which link WAVE highlights.
+
+Extras
+
+Added the viewport meta tag. The language was already set.
+
+WAVE after
+
+0 errors, 0 contrast errors and 1 alert.
+1 feature, 18 structural elements and 1 ARIA.
+AIM score 10 out of 10.
+Before, it was 0 errors and 3 alerts, with 9 structural elements.

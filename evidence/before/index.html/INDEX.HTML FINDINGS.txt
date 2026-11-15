@@ -39,8 +39,6 @@ Zoom
 At 200% there’s sideways scrolling, and the banner shrinks in width, but nothing is cut off or hard to reach.
 At 400% the banner gets cut off.
 
-Styles off
-
 It works fine.
 
 Contrast

@@ -1,0 +1,22 @@
+PRIVACY.HTML NEW
+
+Structure
+
+The headings go in order: h1, h2 (“Privacy Notice”), then h3s for each section. Nothing is skipped.
+The header, nav, main and footer are marked up properly.
+The page has lang="en", the viewport meta tag and a unique, descriptive title (“Privacy Notice - Barry’s Car Sales”).
+
+Navigation
+
+The nav is Home, About, Enquire, matching the other pages.
+No nav link is highlighted, because the page isn’t in the nav. It’s reached through the “Privacy Notice” link under the enquiry form.
+
+Links
+
+The only link to it is the “Privacy Notice” link on the enquiry page, whose text makes sense on its own.
+
+WAVE
+
+0 errors, 0 contrast errors and 0 alerts.
+1 feature (the language), 13 structural elements and 0 ARIA.
+AIM score 10 out of 10.

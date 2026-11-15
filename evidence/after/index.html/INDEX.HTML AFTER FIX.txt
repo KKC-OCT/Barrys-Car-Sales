@@ -1,0 +1,41 @@
+INDEX.HTML AFTER FIX
+
+Keyboard
+
+The 2020 Trail 1.5 card now has a real link, “Enquire about 2020 Trail 1.5”, like the other three cards. It’s no longer plain text.
+The nav now shows which page I’m on. Home is bold with a line under it, and aria-current="page" is set. WAVE picks it up (1 ARIA).
+The nav on this page is Home, About, Enquire. “Contact” is now “Enquire”.
+
+Headings and structure
+
+“Cars currently available” changed from <h4> to <h2>, so no level is skipped. WAVE’s structure view shows h1, h2, h2, the four car names as h3, then h2.
+The header, nav, main and footer are still marked up properly, with 1 of each in WAVE.
+I also added an “Important Vehicle Information” section under an <h2>, and the footer now has an <h3>.
+
+Links
+
+“Click here” and “More” are replaced with “Enquire about 2019 Hatch 1.0” and “Enquire about 2018 Audi S4”. The SUV and City-e links follow the same pattern, so every link says which car it’s for.
+
+Images
+
+All four images now have alt text: a blue hatchback, a blue SUV, a white saloon, and a white electric car at a charging point. WAVE shows 4 alternative text features and no missing alt error.
+
+Extras
+
+Added lang="en", and WAVE now shows the language as identified.
+Added the viewport meta tag.
+
+Zoom
+
+In the CSS I replaced the fixed widths with flexible ones. main uses a percentage with a max-width, images have max-width: 100%, and the header and footer are full width.
+
+WAVE after
+
+0 errors, 0 contrast errors and 0 alerts.
+5 features, 13 structural elements and 1 ARIA.
+AIM score 10 out of 10.
+Before, it was 2 errors, 6 alerts and 8.4.
+
+Contrast
+
+WAVE shows 0 contrast errors.

@@ -1,0 +1,35 @@
+ENQUIRY.HTML AFTER FIX
+
+Keyboard and form
+
+Every field now has a proper label linked to it: Vehicle, Full name, Email, Telephone, Message, the checkbox, and the Email and Phone radios. Clicking the text now selects the checkbox and radios. WAVE shows 8 form labels and no missing label errors.
+“Preferred contact method” is now grouped in a <fieldset> with a <legend>.
+Email is now type="email" and Telephone is type="tel".
+Required fields are marked with a red * and a “* Required fields” note, and they have the required attribute. The marker is a symbol plus text, so it no longer relies on colour alone.
+Leaving a required field empty now gives an error (“Please fill out this field”), and a bad email gets “Please include an ‘@’...”. These are the browser’s built-in messages.
+Submitting a correct form now shows “Thank you! Your enquiry has been submitted successfully.” and clears the form. Before, Enter just wiped everything with no feedback.
+The confirmation is announced to screen readers (role="status", aria-live="polite"), and WAVE shows it as 1 ARIA live region.
+The message box is no longer pre-filled. The hint is now placeholder text, so nothing needs deleting.
+The button now says “Submit Enquiry” instead of “SUBMIT”.
+The focused field shows a dark outline, as in the Full name screenshot.
+Arriving from a car link on the home page now pre-selects that vehicle in the dropdown.
+
+Layout
+
+The form is now in a box with full-width fields and consistent spacing. The checkbox and radios sit next to their labels, and the form lines up.
+
+Navigation
+
+The nav is Home, About, Enquire, matching the other pages. “Enquiry” is now “Enquire”.
+“Enquire” is bold with a line under it, and aria-current="page" is set, so it’s clear which page I’m on.
+
+Extras
+
+Added a privacy note with a link to the Privacy Notice, under the form.
+
+WAVE after
+
+0 errors, 0 contrast errors and 0 alerts.
+10 features, 7 structural elements and 3 ARIA.
+AIM score 10 out of 10.
+Before, it was 4 errors, 2 alerts and 7.3.
