@@ -1,6 +1,7 @@
 # Barry's Car Sales: Accessibility and Usability Enhancement
 
-Individual coursework for 5WCM2000 / 5WCM2001 (University of Hertfordshire).
+Individual coursework for 5WCM2000-0901-2026 - Accessibility and Usability (COM) 
+(University of Hertfordshire).
 
 This repository contains an enhanced version of the supplied starter site for Barry's Car Sales, a fictional used-car dealer in Hatfield, Hertfordshire. The site was evaluated for accessibility (WAVE plus manual checks, against WCAG 2.2) and usability (Nielsen's ten heuristics), then improved and re-tested. The written report explains the evaluation, the changes and the reasoning.
 
